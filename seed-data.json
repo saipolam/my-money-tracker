@@ -1,0 +1,107 @@
+{
+  "transactions": [
+    {
+      "date": "2026-10-01",
+      "type": "Credit",
+      "category": "Salary",
+      "description": "October salary",
+      "amount": 55000.0,
+      "mode": "Net Banking"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "Expense",
+      "category": "Food & Groceries",
+      "description": "Weekly vegetables & groceries",
+      "amount": 1850.0,
+      "mode": "UPI"
+    },
+    {
+      "date": "2026-10-03",
+      "type": "Expense",
+      "category": "Transport & Fuel",
+      "description": "Petrol",
+      "amount": 600.0,
+      "mode": "Cash"
+    }
+  ],
+  "debts": [
+    {
+      "date": "2026-10-10",
+      "type": "Owed to Me",
+      "person": "Rahul",
+      "reason": "Lent for bike repair",
+      "amount": 5000.0,
+      "paid": 0.0,
+      "dueDate": "2026-11-10",
+      "status": "Unpaid"
+    }
+  ],
+  "loans": [
+    {
+      "name": "Bike Loan",
+      "lender": "HDFC Bank",
+      "amount": 80000.0,
+      "interest": 9.5,
+      "emi": 2563.0,
+      "tenure": 36,
+      "firstDate": "2026-08-05"
+    }
+  ],
+  "payments": [
+    {
+      "date": "2026-08-05",
+      "loan": "Bike Loan",
+      "amount": 2563.0,
+      "note": "Auto-debit"
+    },
+    {
+      "date": "2026-09-05",
+      "loan": "Bike Loan",
+      "amount": 2563.0,
+      "note": "Auto-debit"
+    },
+    {
+      "date": "2026-10-05",
+      "loan": "Bike Loan",
+      "amount": 2563.0,
+      "note": "Auto-debit"
+    }
+  ],
+  "expenseCategories": [
+    "Food & Groceries",
+    "Dining Out",
+    "Rent / Housing",
+    "Utilities & Bills",
+    "Transport & Fuel",
+    "Shopping",
+    "Health & Medical",
+    "Education",
+    "Entertainment",
+    "Travel",
+    "Insurance",
+    "Subscriptions",
+    "Savings & Investments",
+    "Gifts & Donations",
+    "Personal Care",
+    "Family & Kids"
+  ],
+  "incomeCategories": [
+    "Salary",
+    "Business",
+    "Freelance",
+    "Interest / Dividends",
+    "Refund",
+    "Gift Received",
+    "Other Income"
+  ],
+  "modes": [
+    "Cash",
+    "UPI",
+    "Debit Card",
+    "Credit Card",
+    "Net Banking",
+    "Other"
+  ],
+  "version": 1
+}
