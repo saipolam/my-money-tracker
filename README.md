@@ -1,6 +1,6 @@
 # My Money Tracker — installable PWA
 
-A responsive personal finance tracker based on `Money_Tracker.xlsx`, with local device storage, dashboard, transactions, debts, EMI loans, payment log, monthly reports, and Excel/JSON import/export.
+A responsive personal finance tracker with an empty first launch (no sample transactions, debts, loans, or EMI payments), local device storage, dashboard, transactions, debts, EMI loans, payment log, monthly reports, and Excel/JSON import/export. Income and expense categories are filtered by the selected transaction type.
 
 ## Files
 - `index.html` — app interface and styling
@@ -8,7 +8,6 @@ A responsive personal finance tracker based on `Money_Tracker.xlsx`, with local 
 - `manifest.json` — PWA install metadata
 - `sw.js` — offline caching service worker
 - `icon.svg` — app icon
-- `seed-data.json` — starting records extracted from the provided workbook
 
 ## Run and install
 PWAs need HTTPS or localhost; opening `index.html` directly from a file manager will not enable installation or service-worker offline caching.
@@ -32,3 +31,6 @@ Import accepts sheets named `Transactions`, `Debts`, `EMI Loans`, and `EMI Payme
 
 ## Privacy / storage
 Records are stored in browser `localStorage` on the device. They are not automatically synced to Google Sheets or another device. Export a JSON or Excel backup before clearing browser data, uninstalling, or changing devices. This is a starter personal app, not a bank-connected financial service.
+
+## First launch
+The app starts with no transaction, debt, loan, or EMI payment records. Default category and payment-mode choices are provided, and the category dropdown changes based on whether the transaction is Income or Expense.
